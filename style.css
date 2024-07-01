@@ -1,0 +1,200 @@
+@font-face {
+  font-display: swap;
+  font-family: "Sono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("sono-v6-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Coiny";
+  font-style: normal;
+  font-weight: 400;
+  src: url("coiny-v16-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Paytone One";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/paytone-one-v23-latin-regular.woff2") format("woff2");
+}
+
+body {
+  background-color: #171717;
+  color: #fafaf9;
+  font-family: "Sono", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.same-song {
+  max-width: 620px;
+}
+
+/*MAIN*/
+
+section {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.self-description p,
+.links p,
+.same-song p {
+  /*background-color: #262626;*/
+  color: #fafaf9;
+  font-size: 18px;
+  line-height: 1.4;
+  padding: 20px 20px;
+  border-radius: 12px;
+}
+
+.links p,
+.same-song p {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media-links,
+.more-links {
+  background-color: #262626;
+  border-radius: 12px;
+}
+
+.same-song p {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 0px 0px;
+}
+
+.self-description p {
+  background-color: #262626;
+}
+
+/* LOGO */
+
+.logo img {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+}
+
+.logo h1 {
+  font-size: 32px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Coiny", sans-serif;
+  color: #f9a8d4;
+}
+
+/* SOCIAL MEDIA LINKS */
+/*MON AMOUR SOCIAL MEDIA LINKS */
+
+/*Buttons*/
+
+.button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 100px;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+button {
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  padding: 18px 36px;
+  border-radius: 100px;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border: none;
+}
+
+.twitter-button {
+  background-color: #1da1f2;
+}
+
+.bluesky-button {
+  background-color: #0085ff;
+}
+
+.mastodon-button {
+  background-color: #6364ff;
+}
+
+.mon-amour-button {
+  background-color: #f9a8d4;
+  color: #171717;
+}
+
+.free-palestine-button {
+  background-image: linear-gradient(135deg, #e4312b, #000000, #149954);
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 890px) {
+  .links p,
+  .same-song p {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .logo img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .logo h1 {
+    font-size: 24px;
+  }
+
+  .self-description p,
+  .links p,
+  .same-song p,
+  .same-song {
+    padding: 5px 5px;
+    letter-spacing: -1px;
+    border: none;
+  }
+
+  .links p,
+  .more-links p {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: none;
+  }
+}
