@@ -1,0 +1,2 @@
+# itsamelucy.com
+personal website
